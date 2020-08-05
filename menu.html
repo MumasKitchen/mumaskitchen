@@ -1,13 +1,14 @@
 <html>
     <head>
-        <style src="style.css">body {
+        <style src="style.css">
+        body {
             background-color: crimson;
+           
         }
         #drop{
             font-style: normal;
             color: black;
             font-size: large;
-
         }
         #bar {
             background-color: gold;
@@ -18,16 +19,67 @@
             text-align: center;
             text-decoration: none;
             font-size: 17px;
+            height : 50px;
         }
-        button {
+        #baritems {
             font-size: large;
             background-color: gold;
             border-width: 0px;
+            transition-duration: 0.4s;
+            height: 50px;
+        }
+        #baritems:hover {
+            background-color: crimson;
+            color: gold;
         }
         #logo {
             float: center;
             text-align: center;
         }
+        .items {
+            background-color: crimson;
+        }
+        .options {
+            list-style-type: none;
+            text-align: center;
+            text-decoration: crimson;
+            
+        }
+        #menuitems{
+            background-color: crimson;
+            font-weight: bolder;
+            font-size: larger;
+            border-width: 0px;
+            transition-duration: 0.4s;
+    
+        }
+        #menuitems:hover {
+            background-color: gold;
+            color:black;
+        }
+        #back {
+            background-color: crimson;
+            font-weight: bolder;
+            font-size: larger;
+            border-width: 0px;
+            transition-duration: 0.4s; 
+        }
+        #back:hover {
+            background-color: gold;
+            color:black;
+        }
+        #everything {
+            text-align: center;
+            float: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0mm;
+            display: inline-block;
+        }
+ 
+
         </style>
         <script src="jquery.js">
         </script>
@@ -39,14 +91,66 @@
     <body>
         <p>
             
-            <div id="bar"><a href="index.html"><button><strong>Home</strong></button></a>
-                <a href="menu.html" id="drop"><button><strong>Menu</strong></button></a>
-                <a href="about.html" id="drop"><button><strong>About</strong></button></a>
+            <div id="bar"><a href="index.html"><button id="baritems"><strong>Home</strong></button></a>
+                <a href="menu.html" id="drop"><button id="baritems"><strong>Menu</strong></button></a>
+                <a href="about.html" id="drop"><button id="baritems"><strong>Feedback</strong></button></a>
         </p>
     </div>
-    <br><br>
+    <br>
     <center><img src="mumaskitchen.png" id="logo"></center>
-            
+     <center>
+    <br>
+     <div id="menuoptions">
+    <button id="menuitems" class="appetizers">Appetizer</button><br>
+     <button id="menuitems" class="maincourse">Main Course</button><br>
+     <button id="menuitems" class="brn">Bread/Rice/Noodles</button><br>
+     <button id="menuitems" class="ds">Dessert/sweets</button><br>
+     <button id="menuitems" class="cakes">Cakes</button><br>
+     <button id="menuitems" class="assamese">Assamese Cuisine</button></div>
+</center>
+    <div id="everything">
+        <div id="appetizer">
+         <h1>Appetizers</h1>
+         <p>
+             <h2>Veg</h2>
+             <ul>
+                 <li>Aalu Chop</li>
+                 <li>Onion Pakora</li>
+                 <li>Dahi Bada</li>
+                 <li>Samosa</li>
+                 <li>Papri Chaat</li>
+                <li>Veg Puffs</li>
+                 <li>Gobi 99</li>
+                <li>Chilli Paneer</li>
+                <li>Mushroom 65</li>
+                <li>Paneer Kathi Roll</li>
+                <li>Bada Pav</li>
+                <li>Pav Bhaji</li>
+             </ul>
+             <h2>Nonveg</h2>
+             <ul>
+                 <li>Chicken 65</li>
+                 <li>Chicken Kebab</li>
+                 <li>Chicken Samosa</li>
+                 <li>Chilli Chicken</li>
+                 <li>Chicken Puffs</li>
+                 <li>Liver Fry</li>
+                 <li>Fish Fry</li>
+                 <li>Chicken Bhuna</li>
+                 <li>Tandoori Chicken</li>
+             </ul>
+
+         </p>
+    </div>
+     
+     <div id="maincourse"></div>
+     <div id="brn"></div>
+     <div id="ds"></div>
+     <div id="cakes"></div>
+     <div id="assamese"></div>
+    </div>
+    <button id="back">Back</button>
+     
         
         
         
