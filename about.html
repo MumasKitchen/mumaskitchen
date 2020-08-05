@@ -7,8 +7,14 @@
             font-style: normal;
             color: black;
             font-size: large;
-
+            transition-duration: 0.4s;
+            height: 50px;
         }
+        #drop:hover {
+            background-color: crimson;
+            color: gold;
+        }
+
         #bar {
             background-color: gold;
             overflow: hidden;
@@ -18,6 +24,7 @@
             text-align: center;
             text-decoration: none;
             font-size: 17px;
+            height: 50px;
         }
         button {
             font-size: large;
@@ -39,15 +46,23 @@
     <body>
         <p>
             
-            <div id="bar"><a href="index.html"><button><strong>Home</strong></button></a>
-                <a href="menu.html" id="drop"><button><strong>Menu</strong></button></a>
-                <a href="about.html" id="drop"><button><strong>About</strong></button></a>
+            <div id="bar"><a href="index.html"><button id="drop"><strong>Home</strong></button></a>
+                <a href="menu.html"><button id="drop"><strong>Menu</strong></button></a>
+                <a href="about.html"><button id="drop"n><strong>Feedback</strong></button></a>
         </p>
     </div>
-    <br><br>
+    <br>
     <center><img src="mumaskitchen.png" id="logo"></center>
             
-        
+    <form action=”officialmumaskitchen@gmail.com” method=”POST” enctype=”multipart/form-data” name=”EmailTestForm”>
+    
+    Name:<br>
+    
+    <input type=”text” size=”24″ name=”VisitorName”><br><br>
+    
+    Message:<br> <textarea name=”VisitorComment” rows=”4″ cols=”20″>
+    
+    </textarea><br><br> <button type="submit">Submit</button> </form>
         
         
 
